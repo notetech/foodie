@@ -1,0 +1,19 @@
+.cart-bar-container {
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(221, 221, 221, 0.55);
+    padding:1em;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.cart-bar-container button {
+    border: none;
+    padding:.3em;
+    background-color: #d56;
+    color: #ddd;
+    margin-left: 5px;
+}
