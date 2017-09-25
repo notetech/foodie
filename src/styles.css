@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Lobster|Alfa+Slab+One');
 
 *{
 
@@ -11,8 +12,45 @@ html {
     height: 100%;
     
 }
-
 body {
-
     height: 100%;
+    font-family: 'Alfa Slab One', cursive;
+}
+.app-container {
+
+    background-color: orange;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+
+header {
+    text-align: center;
+}
+
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    transform: rotate(-7deg);
+    text-shadow: 1px 2px red;
+    font-size: 5em;
+    color: #fff;
+    transition:  transform .5s;
+}
+
+header h1:hover {
+
+    transform: rotate(0);
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: rgba(213, 186, 146, 0.69);
+    padding: 5px;
+    text-align: center;
+    
 }

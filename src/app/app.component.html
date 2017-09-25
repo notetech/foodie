@@ -1,6 +1,16 @@
 <div class="app-container">
-    <h1>Foodie</h1>
 
-    <food-item *ngFor="let fruit of fruits" [fruit]="fruit"></food-item>
+    <header>
+        <h1>Foodie</h1>
+    </header>
+    
+    <main>
+       <food-item *ngFor="let fruit of fruits" [fruit]="fruit"></food-item> 
+    </main>
+
+    <footer>
+        &copy; 2017 
+    </footer>
+    
     
 </div>
