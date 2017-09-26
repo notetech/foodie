@@ -3,6 +3,7 @@
     background: #fff;
     justify-content: space-between;
     padding: 5px;
+    align-items: center;
 }
 
 .cart-item-container div {

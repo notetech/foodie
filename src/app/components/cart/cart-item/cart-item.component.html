@@ -1,9 +1,12 @@
 <div class="cart-item-container">
   <div>
+     <img style="width: 64px;" [src]="cartItem.product.image"/>
+  </div>
+  <div>
     {{cartItem.product.name}}
   </div>
   <div>
-    Qty : {{ cartItem.quantiy }}
+    Qty : {{ cartItem.quantiy }} 
   </div>
   <div>
     {{ cartItem.getTotalPrice() }}

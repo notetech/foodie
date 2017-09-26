@@ -3,3 +3,27 @@
     flex-direction: column;
     align-items: center;
 }
+
+.cp-total {
+    padding: 5px;
+    background-color: #ddd;
+
+}
+
+.cp-pay {
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+.cp-pay button {
+    padding: 10px;
+    background-color: #d56;
+    border:none;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #fff;
+    min-width: 200px;
+    border-radius: 3px;
+}

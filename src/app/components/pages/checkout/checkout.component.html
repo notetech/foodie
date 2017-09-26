@@ -2,10 +2,16 @@
   <div *ngIf="cart.cartItems.length" style="width:60%;">
     <h2>Your Cart</h2>
     <cart-item *ngFor="let cartItem of cart.cartItems" [cartItem]="cartItem"></cart-item>
-    <div>{{cart.getTotalPrice()}}</div>
+    <div class="cp-total">Total Amount :{{cart.getTotalPrice()}}</div>
+    <div class="cp-pay">
+      <button>PAY</button>
+    </div>
   </div>
   <div *ngIf="!cart.cartItems.length">
     <h2>Your Cart is empty</h2>
+    <div>
+      <a routerLink="/" routerLinkActive="active">CONTINUE SHOPING?</a>
+    </div>
   </div>
   
 </div>

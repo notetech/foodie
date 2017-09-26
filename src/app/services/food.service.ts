@@ -18,6 +18,12 @@ export class FoodService {
         image: 'http://images6.fanpop.com/image/photos/34500000/Banana-3-bananas-34512789-1000-1000.jpg',
         stock:15,
         price:5
+      },
+      {
+        name:'Grape',
+        image:'https://www.fast-growing-trees.com/images/P/Concord-Grape-450w.jpg',
+        stock:8,
+        price:21
       }
 
     ]
