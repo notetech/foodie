@@ -1,10 +1,11 @@
 <div class="food-item">
   <div class="fi-image">
-    <img style="width: 64px;" [src]="fruit.image"/>
+    <img style="width: 64px;" [src]="food.image"/>
   </div>
-  <div class="fi-name">{{fruit.name}}</div>
-  <div class="fi-rating">{{ fruit.rating}}</div>
+  <div class="fi-name">{{food.name }}</div>
+  <div class="fi-stock" [class.fi-outOfStock]="!food.stock">Stock : {{ food.stock }}</div>
+  <div class="fi-price">₹ {{ food.price }}</div>
   <div class="fi-add-cart">
-    <button>ADD TO CART</button>
+    <button [disabled]="!food.stock" (click)="addToCart()">ADD TO CART</button>
   </div>
 </div>

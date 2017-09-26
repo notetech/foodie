@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Fruit } from '../../../models/fruit';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Food } from '../../../models/food';
+
 @Component({
   selector: 'food-item',
   templateUrl: './food-item.component.html',
@@ -7,7 +8,10 @@ import { Fruit } from '../../../models/fruit';
 })
 export class FoodItemComponent implements OnInit {
 
-  @Input('fruit') fruit: Fruit;
+  @Input('food') food: Food;
+
+  @Output('onAddToCart') onAddToCart: EventEmitter<Food> = new EventEmitter();
+
   private name: string = 'Apple'; 
   private image: string = '';
   private rating: number =5; // 5/5
@@ -15,8 +19,16 @@ export class FoodItemComponent implements OnInit {
 
   ngOnInit() {
 
-    console.log(this.fruit);
+    console.log(this.food);
+
     
+    
+  }
+
+  addToCart() {
+
+    this.food.stock -= 1;
+    this.onAddToCart.emit(this.food)
   }
 
 }

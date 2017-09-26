@@ -2,15 +2,15 @@
 
     <header>
         <h1>Foodie</h1>
-        <cart-bar></cart-bar>
+        <cart-bar [(cart)]="cart"></cart-bar>
     </header>
     
     <main>
-       <food-item *ngFor="let fruit of fruits" [fruit]="fruit"></food-item> 
+       <food-item *ngFor="let food of foodItems" (onAddToCart)="onAddToCartHandler($event)" [food]="food"></food-item> 
     </main>
 
     <footer>
-        &copy; 2017 
+        &copy; 2017 ; By Sarath (The Kind) With <strong style="color:brown">❤</strong>
     </footer>
     
     

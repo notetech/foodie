@@ -1,7 +1,8 @@
 <div class="cart-bar-container">
   <div>
     <strong>Your Cart</strong>
-    <p># Items : 0</p>
+    <p># Items : {{ cart.getNumberOfItems() }}</p>
+    <p>₹ : {{ cart.getTotalPrice() }}</p>
   </div>
   <div>
     <button>PROCEED TO CHECKOUT</button>
