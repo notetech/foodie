@@ -1,0 +1,3 @@
+<div>
+   <food-item *ngFor="let food of foodItems" (onAddToCart)="onAddToCartHandler($event)" [food]="food"></food-item> 
+</div>

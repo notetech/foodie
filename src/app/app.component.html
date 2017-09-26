@@ -2,11 +2,11 @@
 
     <header>
         <h1>Foodie</h1>
-        <cart-bar [(cart)]="cart"></cart-bar>
+        <cart-bar ></cart-bar>
     </header>
     
     <main>
-       <food-item *ngFor="let food of foodItems" (onAddToCart)="onAddToCartHandler($event)" [food]="food"></food-item> 
+       <router-outlet></router-outlet>
     </main>
 
     <footer>

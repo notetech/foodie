@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Cart } from '../../../models/cart';
+import { CartService } from '../../../services/cart.service';
 @Component({
   selector: 'cart-bar',
   templateUrl: './cart-bar.component.html',
@@ -7,8 +8,16 @@ import { Cart } from '../../../models/cart';
 })
 export class CartBarComponent implements OnInit {
 
-  @Input('cart') cart: Cart;
-  constructor() { }
+  cart : Cart;
+  constructor(
+
+    private cartSvc: CartService
+
+  ) { 
+
+    this.cart = this.cartSvc.getCart();
+
+  }
 
   ngOnInit() {
   }

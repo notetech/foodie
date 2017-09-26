@@ -1,0 +1,10 @@
+.cart-item-container {
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.cart-item-container div {
+    flex-basis: 30%;
+}

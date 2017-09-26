@@ -10,10 +10,9 @@
     border-radius: 3px;
 }
 
-.cart-bar-container button {
+.cart-bar-container a {
     border: none;
     padding:.3em;
-    background-color: #d56;
-    color: #ddd;
+    color: #d56;
     margin-left: 5px;
 }
